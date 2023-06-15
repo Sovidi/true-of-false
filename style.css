@@ -30,6 +30,7 @@
 .qeustion ul li{
     margin: 50px auto;
     display: flex;
+    transform-style: preserve-3d;
     }
 
 .question > ul > li > p:nth-of-type(1){
@@ -41,7 +42,7 @@
     display: flex;
 }
 
-.question > ul > li:hover:nth-of-type(1) > p{
+.question > ul > li:hover:nth-of-type(1) > p:nth-of-type(1){
     width: 300px;
     height: 300px;
     font-size: 14px;
@@ -65,7 +66,7 @@
     display: flex;
 }
 
-.question > ul > li:hover:nth-of-type(2) > p{
+.question > ul > li:hover:nth-of-type(2) > p:nth-of-type(2){
     width: 300px;
     height: 300px;
     transform: translateX(-40%);
@@ -90,7 +91,7 @@
     display: flex;
 }
 
-.question > ul > li:hover:nth-of-type(3) > p{
+.question > ul > li:hover:nth-of-type(3) > p:nth-of-type(3){
     width: 300px;
     height: 300px;
     transform: translateX(-40%);
