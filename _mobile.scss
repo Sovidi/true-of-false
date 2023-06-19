@@ -1,0 +1,35 @@
+@import "./_media";
+
+@mixin device($a1){
+    @media (#{$a1}){
+        @content;
+    }
+}
+
+@include device(#{nth($tablet, 2)}){
+    body{background-color: black;}
+}
+
+@include device(#{nth($tablet, 1)}){
+    body{background-color: purple;}
+}
+
+@include device(#{nth($mobile, 2)}){
+    body{background-color: green;}
+}
+
+@include device(#{nth($mobile, 1)}){
+    body{background-color: red;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
