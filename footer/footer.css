@@ -1,0 +1,15 @@
+footer {
+  width: 100%;
+  height: 300px;
+  background-color: rgb(196, 196, 196);
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+}
+footer div {
+  color: rgb(0, 0, 0);
+  margin: 0px auto;
+}
+footer div p {
+  margin: 15px auto;
+}/*# sourceMappingURL=footer.css.map */

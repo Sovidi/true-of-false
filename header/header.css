@@ -1,0 +1,39 @@
+header {
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-evenly;
+  font-weight: bold;
+}
+header h1 {
+  background-image: url(../img/ic_LOGO.svg);
+  width: 260px;
+  height: 20px;
+}
+header .menus {
+  display: flex;
+}
+header .menus li {
+  margin: 0px 4%;
+  font-size: 1.2rem;
+}
+header .burger {
+  width: 5%;
+  display: flex;
+  flex-direction: column;
+}
+header .burger span {
+  margin: 3px auto;
+  border: 3px solid;
+  width: 30px;
+  height: 3px;
+  transition: 0.5s;
+}
+header .burger:hover span:nth-of-type(1) {
+  transform: rotate(30deg) translate(0px, 14px);
+}
+header .burger:hover span:nth-of-type(2) {
+  opacity: 0%;
+}
+header .burger:hover span:nth-of-type(3) {
+  transform: rotate(-30deg) translate(0px, -14px);
+}/*# sourceMappingURL=header.css.map */

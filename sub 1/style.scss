@@ -1,0 +1,103 @@
+@charset "utf-8";
+@import "../_reset";
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gothic+A1&display=swap');
+
+*{
+    font-family: 'Black Han Sans', sans-serif;
+    font-family: 'Gothic A1', sans-serif;
+}
+
+html{
+    font-size: 16px;
+}
+
+main{
+    > .intro{
+        height: 700px;
+        position: relative;
+        white-space: pre-line;
+        width: 100%;
+        @include flex(space-evenly, start);
+        flex-direction: column;
+        
+        h1{
+            font-size: 3.4rem;
+            margin-left: 15%;
+        }
+        p{font-size: 1.2rem;
+            margin-left: 15%;
+            z-index: 100;
+            b{            }
+        }
+        &:before {
+            content: "COMPANY";
+            position: absolute;
+            right: 0;
+            bottom: 0%;
+            font-size: 14.5833vw;
+            font-weight: 700;
+            color: #f8f8f8;
+            line-height: 14.5833vw;
+            letter-spacing: -1vw;
+            z-index: 0;
+        }
+    }
+    > .second-content{
+        background-color: rgba(128, 128, 128, 0.083);
+        @include flex(space-between, start);
+        > .second-content-title{
+            width: 30%;
+            text-align: center;
+            > strong{
+                position: relative;
+                width: 40%;
+                font-size: 2rem;
+                margin-top: 20%;
+            &::after{
+                content: "";
+                position: absolute;
+                bottom: -17px;
+                left: 0%;
+                width: 30px;
+                height: 4px;
+                background-color: black;
+                }
+            }
+        }
+        > .second-content-inner{
+            > p{
+                width: 80%;
+                font-size: 1.4rem;
+                margin: 5% auto;
+                margin-bottom: 10%;
+            }
+            > .second-content-inner-table{
+                @include flex(space-evenly, center);
+                > ul{width: 100%;
+                    li{
+                        font-size: 0.8rem;
+                        margin: 0 auto;
+                        padding: 1%;
+                        vertical-align: middle;
+                        margin-bottom: 3%;
+                        width: 60%;
+                        @include flex(space-evenly, center);
+                        border: #eee solid 1px;
+                        border-width: 1px 0;
+                        strong{width: 40%;}
+                        span{width: 110%;}
+                    }
+                }
+                > figure{
+                    margin: 0 auto;
+                    > img{width: 70%;}}
+            }
+        }
+    }
+}
+
+
+
+@import "../header/header.scss";
+@import "../snsicons/snsicons.scss";
+@import "../footer/footer.scss";

@@ -1,0 +1,589 @@
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gothic+A1&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+
+html, body {
+  margin: 0px;
+}
+
+h1, h2, h3, h4, p, figure {
+  margin: 0px;
+}
+
+ul, li {
+  list-style-type: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a, b, i, em, strong, span {
+  display: inline-block;
+}
+
+* {
+  font-family: "Black Han Sans", sans-serif;
+  font-family: "Gothic A1", sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+main {
+  margin-top: 200px;
+  position: relative;
+}
+main .titleImage .bgImage {
+  position: relative;
+}
+main .titleImage .bgImage .title-text {
+  position: absolute;
+  white-space: pre-line;
+  z-index: 100;
+  top: -13%;
+  left: 25%;
+}
+main .titleImage .bgImage .title-text p:nth-of-type(1) {
+  font-size: 5rem;
+}
+main .titleImage .bgImage .title-text p:nth-of-type(1) b {
+  font-size: 5rem;
+  margin-top: 30px;
+}
+main .titleImage .bgImage .title-text p:nth-of-type(2) {
+  margin-top: 100px;
+  font-size: 1.3rem;
+  line-height: 30px;
+}
+main .titleImage .bgImage .slide-1 {
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto 50px 20px;
+}
+main .titleImage .bgImage .slide-1 label {
+  font-size: 1.2rem;
+}
+main .titleImage .bgImage .slide-1 label:before {
+  content: "";
+  border: 2px solid;
+  width: 30px;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0px;
+  font-size: 2rem;
+  margin-right: 13px;
+  transition: 0.3s;
+}
+main .titleImage .bgImage .slide-1 label:nth-of-type(1):hover:before {
+  width: 4px;
+  transition: 0.3s;
+}
+main .titleImage .bgImage .slide-1 label:nth-of-type(2):hover:before {
+  width: 4px;
+  transition: 0.3s;
+}
+main .titleImage .bgImage .slide-1 label:nth-of-type(3):hover:before {
+  width: 4px;
+  transition: 0.3s;
+}
+main .titleImage .bgImage .slide-2 {
+  position: absolute;
+  right: 5%;
+  bottom: 20%;
+}
+main .titleImage .bgImage .slide-2 label {
+  padding: 30px;
+  background-color: black;
+  color: white;
+  display: inline-block;
+  vertical-align: middle;
+}
+main .titleImage .bgImage .slide-2 label span {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  margin: 0px auto;
+  transform: translateX(3px);
+}
+main .titleImage .bgImage .title-figure {
+  height: 600px;
+  width: 100%;
+  height: 600px;
+  vertical-align: middle;
+  overflow: hidden;
+}
+main .titleImage .bgImage .title-figure div:nth-of-type(1) {
+  background-image: url(../img/img_bg01.jpg);
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: 1s;
+}
+main .titleImage .bgImage .title-figure div:nth-of-type(2) {
+  background-image: url(../img/img_bg02.jpg);
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: 1s;
+}
+main .titleImage .bgImage .title-figure div:nth-of-type(3) {
+  background-image: url(../img/img_bg03.jpg);
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: 1s;
+}
+main .titleImage .second-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+  margin: 0px auto;
+  height: 700px;
+}
+main .titleImage .second-content .second-content-text {
+  white-space: pre-line;
+}
+main .titleImage .second-content .second-content-text > p:nth-of-type(1) {
+  font-size: 2rem;
+}
+main .titleImage .second-content .second-content-text > p:nth-of-type(2) {
+  font-size: 3.5rem;
+  font-weight: 900;
+}
+main .titleImage .second-content .second-content-text > p:nth-of-type(3) {
+  font-size: 1.3rem;
+}
+main .titleImage .second-content .second-content-text > a {
+  background-color: black;
+  width: 150px;
+  height: 50px;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+main .titleImage .second-content .second-content-text > a:hover p:after {
+  width: 1px;
+}
+main .titleImage .second-content .second-content-text > a > p {
+  margin: 0px auto;
+  font-size: 1rem;
+}
+main .titleImage .second-content .second-content-text > a > p::after {
+  content: "";
+  border: 2px solid;
+  color: white;
+  display: inline-block;
+  width: 30px;
+  vertical-align: middle;
+  margin-left: 10px;
+  transition: 1s;
+}
+main .titleImage .second-content .second-content-image {
+  width: 485px;
+  height: 485px;
+  background-position: center;
+  background-image: url(../img/img_content1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main .titleImage .text-bar {
+  margin: 20% 0px;
+}
+main .titleImage .text-bar p {
+  font-size: 100px;
+  white-space: nowrap;
+}
+main .titleImage .text-bar p:nth-of-type(1) {
+  transform: translate(-8000px, 0px);
+  animation: txtbar1 30s infinite;
+}
+main .titleImage .text-bar p:nth-of-type(2) {
+  transform: translate(-1000px, 0px);
+  animation: txtbar2 30s infinite;
+  animation-fill-mode: forwards;
+  color: transparent;
+  -webkit-text-stroke: 1px black;
+}
+@keyframes txtbar1 {
+  100% {
+    transform: translate(-1000px, 0px);
+  }
+}
+@keyframes txtbar2 {
+  100% {
+    transform: translate(-8000px, 0px);
+  }
+}
+main .titleImage .third-content {
+  margin: 0px auto;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  white-space: pre-line;
+}
+main .titleImage .third-content > div {
+  margin: 0px auto;
+}
+main .titleImage .third-content .third-content-text-1 p:nth-of-type(1) {
+  font-size: 2rem;
+}
+main .titleImage .third-content .third-content-text-1 p:nth-of-type(2) {
+  font-size: 5rem;
+  font-weight: bold;
+}
+main .titleImage .third-content .third-content-text-2 p {
+  font-size: 1.3rem;
+  line-height: 30px;
+  letter-spacing: 0cap;
+}
+main .titleImage .content-4 {
+  position: relative;
+  width: 100%;
+  height: 1000px;
+}
+main .titleImage .content-4 > figure {
+  position: absolute;
+}
+main .titleImage .content-4 > figure img {
+  width: 100%;
+}
+main .titleImage .content-4 > .content-4-middle {
+  width: 100%;
+  height: 80%;
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+main .titleImage .content-4 > .content-4-middle > .content-4-text {
+  white-space: pre-line;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+  flex-direction: column;
+}
+main .titleImage .content-4 > .content-4-middle > .content-4-text > p {
+  margin: 20px 0px;
+}
+main .titleImage .content-4 > .content-4-middle > .content-4-text > p:nth-of-type(1) {
+  font-size: 1.2rem;
+  color: white;
+}
+main .titleImage .content-4 > .content-4-middle > .content-4-text > p:nth-of-type(2) {
+  font-size: 1rem;
+  color: white;
+  line-height: 30px;
+}
+main .titleImage .content-4 > .content-4-middle > .content-4-text > h2 {
+  font-size: 3rem;
+  color: white;
+}
+main .titleImage .content-4 > .content-4-middle > .content-4-text > a {
+  background-color: black;
+  width: 150px;
+  height: 50px;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+main .titleImage .content-4 > .content-4-middle > .content-4-text > a:hover p:after {
+  width: 1px;
+}
+main .titleImage .content-4 > .content-4-middle > .content-4-text > a > p {
+  margin: 0px auto;
+  font-size: 1rem;
+}
+main .titleImage .content-4 > .content-4-middle > .content-4-text > a > p::after {
+  content: "";
+  border: 2px solid;
+  color: white;
+  display: inline-block;
+  width: 30px;
+  vertical-align: middle;
+  margin-left: 10px;
+  transition: 1s;
+}
+main .titleImage .content-4 > .content-4-middle > .content-4-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: end;
+  flex-direction: column;
+  font-weight: bold;
+}
+main .titleImage .content-4 > .content-4-middle > .content-4-buttons > a {
+  text-align: right;
+  width: 100%;
+  margin: 10% 8%;
+  color: rgba(169, 154, 154, 0.782);
+  transition: 1s;
+}
+main .titleImage .content-4 > .content-4-middle > .content-4-buttons > a:hover {
+  color: white;
+}
+main .titleImage .content-4 > .content-4-middle > .content-4-buttons > a:hover:after {
+  border: 3px solid white;
+}
+main .titleImage .content-4 > .content-4-middle > .content-4-buttons > a:after {
+  content: "";
+  border: 2px solid rgba(169, 154, 154, 0.782);
+  align-items: center;
+  display: inline-block;
+  vertical-align: middle;
+  width: 10px;
+  margin-left: 5px;
+  transition: 1s;
+}
+main .titleImage .contact {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 700px;
+}
+main .titleImage .contact > .contact-text {
+  white-space: pre-line;
+}
+main .titleImage .contact > .contact-text > a {
+  background-color: rgb(0, 0, 0);
+  width: 150px;
+  height: 50px;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+main .titleImage .contact > .contact-text > a:hover p:after {
+  width: 1px;
+}
+main .titleImage .contact > .contact-text > a > p {
+  margin: 0px auto;
+  font-size: 1rem;
+}
+main .titleImage .contact > .contact-text > a > p::after {
+  content: "";
+  border: 2px solid;
+  color: white;
+  display: inline-block;
+  width: 30px;
+  vertical-align: middle;
+  margin-left: 10px;
+  transition: 1s;
+}
+main .titleImage .contact .contact-map {
+  width: 50%;
+  height: 60%;
+  background-color: black;
+}
+main .titleImage .contact .contact-map > span {
+  background-color: grey;
+}
+
+footer {
+  width: 100%;
+  height: 300px;
+  background-color: rgb(196, 196, 196);
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+}
+footer div {
+  color: rgb(0, 0, 0);
+  margin: 0px auto;
+}
+footer div p {
+  margin: 15px auto;
+}
+header {
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-evenly;
+  font-weight: bold;
+}
+header h1 {
+  background-image: url(../img/ic_LOGO.svg);
+  width: 260px;
+  height: 20px;
+}
+header .menus {
+  display: flex;
+}
+header .menus li {
+  margin: 0px 4%;
+  font-size: 1.2rem;
+  position: relative;
+}
+header .menus li:nth-of-type(1):after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  width: 0px;
+  height: 4px;
+  transition: 1s;
+}
+header .menus li:nth-of-type(1):hover:after {
+  width: 90px;
+  height: 4px;
+}
+header .menus li:nth-of-type(2):after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  width: 0px;
+  height: 4px;
+  transition: 1s;
+}
+header .menus li:nth-of-type(2):hover:after {
+  width: 80px;
+  height: 4px;
+}
+header .menus li:nth-of-type(3):after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  width: 0px;
+  height: 4px;
+  transition: 1s;
+}
+header .menus li:nth-of-type(3):hover:after {
+  width: 60px;
+  height: 4px;
+}
+header .menus li:nth-of-type(4):after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  width: 0px;
+  height: 4px;
+  transition: 1s;
+}
+header .menus li:nth-of-type(4):hover:after {
+  width: 50px;
+  height: 4px;
+}
+header .menus li:nth-of-type(5):after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  width: 0px;
+  height: 4px;
+  transition: 1s;
+}
+header .menus li:nth-of-type(5):hover:after {
+  width: 90px;
+  height: 4px;
+}
+header .burger {
+  width: 5%;
+  display: flex;
+  flex-direction: column;
+}
+header .burger span {
+  margin: 3px auto;
+  border: 3px solid;
+  width: 30px;
+  height: 3px;
+  transition: 0.5s;
+}
+header .burger:hover span:nth-of-type(1) {
+  transform: rotate(30deg) translate(0px, 14px);
+}
+header .burger:hover span:nth-of-type(2) {
+  opacity: 0%;
+}
+header .burger:hover span:nth-of-type(3) {
+  transform: rotate(-30deg) translate(0px, -14px);
+}
+
+.snsicons {
+  position: fixed;
+  bottom: 10%;
+  left: 3%;
+  display: inline-block;
+  vertical-align: middle;
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin: 5px 0;
+}
+.snsicons li:nth-of-type(1) {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  background-image: url(../img/icon_sns.svg);
+  background-repeat: no-repeat;
+  background-size: 200% auto;
+  background-position: left top;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+}
+.snsicons li:nth-of-type(1):hover {
+  background-position: right top;
+  background-color: black;
+  border-radius: 30px;
+}
+.snsicons li:nth-of-type(2) {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  background-image: url(../img/icon_sns.svg);
+  background-repeat: no-repeat;
+  background-size: 200% auto;
+  background-position: left 50%;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+}
+.snsicons li:nth-of-type(2):hover {
+  background-position: right 50%;
+  background-color: black;
+  border-radius: 30px;
+}
+.snsicons li:nth-of-type(3) {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  background-image: url(../img/icon_sns.svg);
+  background-repeat: no-repeat;
+  background-size: 200% auto;
+  background-position: left bottom;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+}
+.snsicons li:nth-of-type(3):hover {
+  background-position: right bottom;
+  background-color: black;
+  border-radius: 30px;
+}/*# sourceMappingURL=style.css.map */

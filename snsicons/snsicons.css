@@ -1,0 +1,65 @@
+.snsicons {
+  position: fixed;
+  bottom: 10%;
+  left: 3%;
+  display: inline-block;
+  vertical-align: middle;
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin: 5px 0;
+}
+.snsicons li:nth-of-type(1) {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  background-image: url(../img/icon_sns.svg);
+  background-repeat: no-repeat;
+  background-size: 200% auto;
+  background-position: left top;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+}
+.snsicons li:nth-of-type(1):hover {
+  background-position: right top;
+  background-color: black;
+  border-radius: 30px;
+}
+.snsicons li:nth-of-type(2) {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  background-image: url(../img/icon_sns.svg);
+  background-repeat: no-repeat;
+  background-size: 200% auto;
+  background-position: left 50%;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+}
+.snsicons li:nth-of-type(2):hover {
+  background-position: right 50%;
+  background-color: black;
+  border-radius: 30px;
+}
+.snsicons li:nth-of-type(3) {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  background-image: url(../img/icon_sns.svg);
+  background-repeat: no-repeat;
+  background-size: 200% auto;
+  background-position: left bottom;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+}
+.snsicons li:nth-of-type(3):hover {
+  background-position: right bottom;
+  background-color: black;
+  border-radius: 30px;
+}/*# sourceMappingURL=snsicons.css.map */
