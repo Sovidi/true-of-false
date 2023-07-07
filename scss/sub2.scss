@@ -1,0 +1,254 @@
+@charset "utf-8";
+@import "_reset";
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gothic+A1&display=swap');
+
+*{
+    font-family: 'Black Han Sans', sans-serif;
+    font-family: 'Gothic A1', sans-serif;
+}
+
+html{
+    font-size: 16px;
+}
+
+main{
+    > .intro{
+        height: 600px 0;
+        padding: 100px 0;
+        position: relative;
+        white-space: pre-line;
+        width: 100%;
+        @include flex(space-evenly, start);
+        flex-direction: column;
+        
+        h1{
+            font-size: 4rem;
+            margin-left: 15%;
+        }
+        p{
+            font-size: 1.5rem;
+            margin-left: 15%;
+            font-weight: bold;
+        }
+        &:before {
+            content: "RECRUIT";
+            position: absolute;
+            right: 0;
+            bottom: -15%;
+            font-size: 14.5833vw;
+            font-weight: 700;
+            color: #f8f8f8;
+            line-height: 14.5833vw;
+            letter-spacing: -1vw;
+            z-index: 0;
+        }
+    }
+    > .content-1{
+        padding: 8% 0;
+        margin: 0% 0;
+        width: 100%;
+        background-color: #f8f8f8;
+        @include flex(space-between, start);
+        > .content-1-title{
+            width: 30%;
+            text-align: center;
+            > strong{
+                position: relative;
+                width: 40%;
+                font-size: 2rem;
+            &::after{
+                content: "";
+                position: absolute;
+                bottom: -17px;
+                left: 0%;
+                width: 30px;
+                height: 4px;
+                background-color: black;
+                }
+            }
+        }
+        > .content-1-inner{
+            width: 70%;
+            > p{
+                width: 75%;
+                font-size: 1.6rem;
+                margin-bottom: 5%;
+            }
+            > .content-1-inner-grid{
+                @include flex(space-evenly, center);
+                height: 600px;
+                flex-wrap: wrap;
+                > li{
+                    position: relative;
+                    width: 30%;
+                    height: 20%;
+                    margin: 5%;
+                    > span{
+                        font-weight: 700;
+                        font-size: 1.4rem;
+                        position: absolute;
+                        top: -50%;
+                        > strong{font-size: 5rem;}
+                    }
+                    > p{
+                        padding: 10%;
+                        background-color: rgb(255, 255, 255);
+                        box-shadow: 15px 15px 15px 10px rgb(230, 230, 230);
+                        width: 100%;
+                        height: 100%;
+                        > strong{}
+                        > span{}
+                    }
+                }
+            }
+        }
+    }
+    > .content-2{
+        padding: 10% 0;
+        margin: 0% 0;
+        width: 100%;
+        background-color: #ffffff;
+        @include flex(space-between, start);
+        > .content-2-title{
+            width: 30%;
+            text-align: center;
+            > strong{
+                position: relative;
+                width: 40%;
+                font-size: 2rem;
+            &::after{
+                content: "";
+                position: absolute;
+                bottom: -17px;
+                left: 0%;
+                width: 30px;
+                height: 4px;
+                background-color: black;
+                }
+            }
+        }
+        > .content-2-inner{
+            width: 70%;
+            > p{
+                &:nth-of-type(1){
+                width: 80%;
+                font-size: 1.6rem;
+                margin-bottom: 5%;
+                strong{}
+                span{}
+                }
+                &:nth-of-type(2){
+                    font-size: 0.8rem;
+                }
+            }
+            > .content-2-inner-grid{
+                height: 400px;
+                @include flex();
+                > li{
+                    width: 100%;
+                    div{
+                        @include flex();
+                        flex-direction: column;
+                        margin: auto;
+                        background-color: black;
+                        width: 200px;
+                        height: 200px;
+                        border-radius: 50%;
+                        span{
+                            color: white;
+                            text-align: center;
+                            width: 100%;
+                            color: grey;
+                            font-weight: bold;
+                        };
+                        p{
+                            color: white;
+                            text-align: center;
+                            color: white;
+                            font-weight: bold;
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    > .content-3{
+        padding: 10% 0;
+        margin: 0% 0;
+        width: 100%;
+        background-color: #f8f8f8;
+        @include flex(space-between, start);
+        > .content-3-title{
+            width: 30%;
+            text-align: center;
+            > strong{
+                position: relative;
+                width: 40%;
+                font-size: 2rem;
+            &::after{
+                content: "";
+                position: absolute;
+                bottom: -17px;
+                left: 0%;
+                width: 30px;
+                height: 4px;
+                background-color: black;
+                }
+            }
+        }
+        > .content-3-inner{
+            width: 70%;
+            > .content-3-inner-grid{
+                height: 400px;
+                @include flex();
+                position: relative;
+                > li{
+                    &:nth-of-type(1){
+                        background-image: url(../img/pic_philosophy01.jpg);
+                        @include bgSttin();
+                    }
+                    &:nth-of-type(2){
+                        background-image: url(../img/pic_philosophy02.jpg);
+                        @include bgSttin();
+                    }
+                    &:nth-of-type(3){
+                        background-image: url(../img/pic_philosophy03.jpg);
+                        @include bgSttin();
+                    }
+                    width: 300px;
+                    height: 500px;
+                    div{
+                        @include flex(space-evenly, start);
+                        width: 100%;
+                        height: 100%;
+                        padding: 15%;
+                        flex-direction: column;
+                        margin: auto;
+                        color: white;
+                        white-space: pre-line;
+                        strong{}
+                        span{
+                            width: 100%;
+                            font-weight: bold;
+                            font-size: 1.6rem;
+                        };
+                        p{}
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+
+
+
+
+
+@import "_header.scss";
+@import "_snsicons.scss";
+@import "_footer";

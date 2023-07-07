@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/sub4.css">
+    <script defer src="./js/header.js"></script>
+    <script defer src="./js/sub4.js"></script>
+    <script defer src="./js/common.js"></script>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="bar">
+            <h1>
+                <a href="#"><img src="./img/ic_LOGO.svg" alt=""></a>
+            </h1>
+            <div></div>
+        
+            <ul class="menus">
+                <li>COMPANY</li>
+                <li>RECRUIT</li>
+                <li>BRAND</li>
+                <li>SHOP</li>
+                <li>CONTACT</li>
+            </ul>
+
+			<style>
+				.menus-open{
+					display: none;
+				}
+			</style>
+
+        
+        
+            <div class="burger">
+                <a href="#"></a>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <style>
+        header > .bar > .menus > li:nth-of-type(4){
+            position: relative;
+        }
+
+        header > .bar > .menus > li:nth-of-type(4):after{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: black;
+            width: 100%;
+            height: 4px;
+            transition: 1s;
+        }
+    </style>
+
+
+    <main class="main">
+        <div class="intro">
+            <h1>원더플레이스
+                매장소개</h1>
+                <p>WONDER PLACE SHOP</p>
+        </div>
+
+        <section class="content-1">
+            <div class="content-1-inner">
+            </div>
+            <ul class="content-1-grid">
+                <!-- <li>
+                    <figure>
+                        <img src="" alt="">
+                        <figcaption></figcaption>
+                    </figure>
+                </li> -->
+            </ul>
+        </section>
+    </main>
+
+
+
+    <ul class="snsicons">
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <footer class="footer">
+        <div class="line-1">
+            <p><a href="#">Facebook</a></p>
+            <p><a href="#">Instagram</a></p>
+            <p><a href="#">Youtube</a></p>
+        </div>
+        <div class="line-2">
+            <p>COPYRIGHT</p>
+            <p>© WONDERPLACE</p>
+            <p>ALL RIGHTS RESERVED.</p>
+        </div>
+        <div class="line-3">
+            <ul>
+                <li>
+                    <strong>TEL</strong>
+                    <span><a href="#">1668-3508</a></span>
+                </li>
+                <li>
+                    <strong>E-MAIL</strong>
+                    <span><a href="#">help@wonderplace.co.kr</a></span>
+                </li>
+                <li>
+                    <strong>ADDRESS</strong>
+                    <span>04782 서울특별시 성동구 성수일로6길 33 (성수동2가)
+                        아연디지털타워 5층</span>
+                </li>
+            </ul>
+        </div>
+        <div class="line-4">
+            <p>개인정보처리방침</p>
+            <p>대표이사 : 김영한</p>
+            <p>사업자 등록번호 : 201-86-20597</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+header{
+    > .bar{
+        margin: 50px auto;
+        display: flex;
+        justify-content: space-evenly;
+        font-weight: bold;
+        > h1{
+            a{
+                img{width: 100%;}
+            }
+        }
+        > .menus{
+            display: flex;
+            width: 55%;
+            li{
+                margin: 0px 4%;
+                font-size: 1.2rem;
+                position: relative;
+                    &:after{
+                        content: "";
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        background-color: black;
+                        width: 0px;
+                        height: 4px;
+                        transition: 1s;
+                        }
+                    &:hover{
+                        &:after{
+                            width: 100%;
+                            height: 4px;
+                            }
+                        }
+            }
+        }
+        .burger{
+            width: 2.5%;
+            display: flex;
+            align-items: end;
+            flex-direction: column;
+            position: relative;
+            span{
+                margin: 3px 0;
+                border: 3px solid;
+                width: 30px;
+                height: 3px;
+                transition: 0.5s;       
+                &:nth-of-type(3){
+                    width: 15px;
+                } 
+            }
+            a{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 100;
+            }
+        }   
+    }
+    &.open{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        background-color: rgb(255, 255, 255);
+        // margin: 0;
+        // display: flex;
+        // justify-content: space-evenly;
+        // font-weight: bold;
+        z-index: 100;
+        > .bar{
+            > h1{}
+            > .menus{
+                display: inline-block;
+                width: 35%;
+                > li{
+                    margin: 0px 4%;
+                    font-size: 4rem;
+                        &:after{
+                            content: "";
+                            background-color: black;
+                            width: 0px;
+                            height: 4px;
+                            transition: 1s;
+                            }
+                        &:hover{
+                            &:after{
+                                width: 10%;
+                                height: 4px;
+                                }
+                            }
+                }
+            }
+            > .burger{
+                > span{
+                    &:nth-of-type(1){
+                        transform: rotate(30deg) translate(0px, 14px);
+                    }
+                    &:nth-of-type(2){
+                        opacity: 0%;
+                    }
+                    &:nth-of-type(3){
+                        width: 30px;
+                        transform: rotate(-30deg) translate(0px, -14px);
+                    }
+                }
+            }
+        }        
+    };
+};
+
+
+.ds-not{
+    display: none;
+};
