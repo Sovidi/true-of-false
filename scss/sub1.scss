@@ -261,11 +261,11 @@ main{
                 position: relative;
                 > img{width: 100%}
                 > figcaption{
-                    font-size: 1.8rem;
+                    font-size: 1.4rem;
                     color: white;
                     white-space: pre-line;
                     position: absolute;
-                    top: 150px;
+                    top: 15%;
                     left: 70px;
                     line-height: 50px
                     span{
@@ -675,8 +675,8 @@ main{
 }
 
 
-@import "_header.scss";
-@import "_snsicons.scss";
+@import "_header";
+@import "_snsicons";
 @import "_footer";
-@import "_mobile_sub1.scss";
+@import "_mobile_sub1";
 @import "_mobile";

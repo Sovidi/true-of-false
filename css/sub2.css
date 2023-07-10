@@ -307,7 +307,7 @@ header > .bar > .menus li {
 header > .bar > .menus li:after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: 0%;
   left: 0;
   background-color: black;
   width: 0px;
@@ -363,6 +363,8 @@ header.open > .bar > .menus > li {
 }
 header.open > .bar > .menus > li:after {
   content: "";
+  position: absolute;
+  bottom: 0%;
   background-color: black;
   width: 0px;
   height: 4px;
@@ -501,4 +503,850 @@ footer .line-3 ul li:nth-of-type(2) > span > a:hover {
 }
 footer .line-3 ul li:nth-of-type(3) > span {
   margin-left: 3%;
-}/*# sourceMappingURL=sub2.css.map */
+}
+@media (max-width: 767px) {
+  header.open {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    z-index: 100;
+  }
+  header.open > .bar > .menus {
+    position: fixed;
+    top: 20%;
+    left: 23%;
+    display: inline-block;
+    width: 35%;
+  }
+  header.open > .bar > .menus > li {
+    margin: 20% 4%;
+    font-size: 4rem;
+  }
+  header.open > .bar > .menus > li:after {
+    content: "";
+    background-color: black;
+    width: 0px;
+    height: 4px;
+    transition: 1s;
+  }
+  header.open > .bar > .menus > li:hover:after {
+    width: 10%;
+    height: 4px;
+  }
+  header.open > .bar > .burger > span:nth-of-type(1) {
+    transform: rotate(30deg) translate(0px, 14px);
+  }
+  header.open > .bar > .burger > span:nth-of-type(2) {
+    opacity: 0%;
+  }
+  header.open > .bar > .burger > span:nth-of-type(3) {
+    width: 30px;
+    transform: rotate(-30deg) translate(0px, -14px);
+  }
+  header > .bar {
+    width: 100%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: bold;
+  }
+  header > .bar > h1 a img {
+    width: 100%;
+  }
+  header > .bar > .menus {
+    display: none;
+  }
+  header > .bar > .menus li {
+    margin: 0px 4%;
+    font-size: 1.2rem;
+    position: relative;
+  }
+  header > .bar > .menus li:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    width: 0px;
+    height: 4px;
+    transition: 1s;
+  }
+  header > .bar > .menus li:hover:after {
+    width: 100%;
+    height: 4px;
+  }
+  header > .bar .burger {
+    width: 2.5%;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    position: relative;
+  }
+  header > .bar .burger span {
+    margin: 3px 0;
+    border: 3px solid;
+    width: 30px;
+    height: 3px;
+    transition: 0.5s;
+  }
+  header > .bar .burger span:nth-of-type(3) {
+    width: 15px;
+  }
+  header > .bar .burger a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+  }
+  header > .bar .burger:hover span:nth-of-type(1) {
+    transform: rotate(30deg) translate(0px, 14px);
+  }
+  header > .bar .burger:hover span:nth-of-type(2) {
+    opacity: 0%;
+  }
+  header > .bar .burger:hover span:nth-of-type(3) {
+    width: 30px;
+    transform: rotate(-30deg) translate(0px, -14px);
+  }
+  footer {
+    width: 100%;
+    height: 600px;
+    background-color: rgb(196, 196, 196);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    flex-direction: column;
+    margin-top: 100px;
+    padding-left: 5%;
+  }
+  footer > div {
+    color: rgb(0, 0, 0);
+    margin: 0px;
+  }
+  footer > div ul li {
+    margin: 2% 0;
+  }
+  footer .line-1 {
+    font-size: 1.6rem;
+  }
+  footer .line-1 p:hover > a {
+    text-decoration: underline;
+  }
+  footer .line-2 p:nth-of-type(2) {
+    font-weight: bold;
+  }
+  footer .line-3 ul {
+    width: 100%;
+    font-size: 1rem;
+  }
+  footer .line-3 ul li {
+    display: flex;
+  }
+  footer .line-3 ul li > strong {
+    margin-right: 5%;
+    width: 20%;
+  }
+  footer .line-3 ul li:nth-of-type(1) > span > a:hover {
+    text-decoration: underline;
+  }
+  footer .line-3 ul li:nth-of-type(2) > span > a:hover {
+    text-decoration: underline;
+  }
+  footer .line-3 ul li:nth-of-type(3) > span {
+    margin-left: 3%;
+  }
+}
+@media (max-width: 480px) {
+  header.open {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    z-index: 100;
+  }
+  header.open > .bar > .menus {
+    position: fixed;
+    top: 20%;
+    left: 23%;
+    display: inline-block;
+    width: 35%;
+  }
+  header.open > .bar > .menus > li {
+    margin: 20% 4%;
+    font-size: 4rem;
+  }
+  header.open > .bar > .menus > li:after {
+    content: "";
+    background-color: black;
+    width: 0px;
+    height: 4px;
+    transition: 1s;
+  }
+  header.open > .bar > .menus > li:hover:after {
+    width: 10%;
+    height: 4px;
+  }
+  header.open > .bar > .burger > span:nth-of-type(1) {
+    transform: rotate(30deg) translate(0px, 14px);
+  }
+  header.open > .bar > .burger > span:nth-of-type(2) {
+    opacity: 0%;
+  }
+  header.open > .bar > .burger > span:nth-of-type(3) {
+    width: 30px;
+    transform: rotate(-30deg) translate(0px, -14px);
+  }
+  header > .bar {
+    width: 100%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: bold;
+  }
+  header > .bar > h1 a img {
+    width: 100%;
+  }
+  header > .bar > .menus {
+    display: none;
+  }
+  header > .bar > .menus li {
+    margin: 0px 4%;
+    font-size: 1.2rem;
+    position: relative;
+  }
+  header > .bar > .menus li:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    width: 0px;
+    height: 4px;
+    transition: 1s;
+  }
+  header > .bar > .menus li:hover:after {
+    width: 100%;
+    height: 4px;
+  }
+  header > .bar .burger {
+    width: 2.5%;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    position: relative;
+  }
+  header > .bar .burger span {
+    margin: 3px 0;
+    border: 3px solid;
+    width: 30px;
+    height: 3px;
+    transition: 0.5s;
+  }
+  header > .bar .burger span:nth-of-type(3) {
+    width: 15px;
+  }
+  header > .bar .burger a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+  }
+  header > .bar .burger:hover span:nth-of-type(1) {
+    transform: rotate(30deg) translate(0px, 14px);
+  }
+  header > .bar .burger:hover span:nth-of-type(2) {
+    opacity: 0%;
+  }
+  header > .bar .burger:hover span:nth-of-type(3) {
+    width: 30px;
+    transform: rotate(-30deg) translate(0px, -14px);
+  }
+  footer {
+    width: 100%;
+    height: 600px;
+    background-color: rgb(196, 196, 196);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    flex-direction: column;
+    margin-top: 100px;
+    padding-left: 5%;
+  }
+  footer > div {
+    color: rgb(0, 0, 0);
+    margin: 0px;
+  }
+  footer > div ul li {
+    margin: 2% 0;
+  }
+  footer .line-1 {
+    font-size: 1.6rem;
+  }
+  footer .line-1 p:hover > a {
+    text-decoration: underline;
+  }
+  footer .line-2 p:nth-of-type(2) {
+    font-weight: bold;
+  }
+  footer .line-3 ul {
+    width: 100%;
+    font-size: 1rem;
+  }
+  footer .line-3 ul li {
+    display: flex;
+  }
+  footer .line-3 ul li > strong {
+    margin-right: 5%;
+    width: 20%;
+  }
+  footer .line-3 ul li:nth-of-type(1) > span > a:hover {
+    text-decoration: underline;
+  }
+  footer .line-3 ul li:nth-of-type(2) > span > a:hover {
+    text-decoration: underline;
+  }
+  footer .line-3 ul li:nth-of-type(3) > span {
+    margin-left: 3%;
+  }
+}
+@media (max-width: 767px) {
+  main > .intro {
+    height: 600px 0;
+    padding: 100px 0;
+    position: relative;
+    white-space: pre-line;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    flex-direction: column;
+  }
+  main > .intro h1 {
+    font-size: 4rem;
+    margin-left: 15%;
+  }
+  main > .intro p {
+    font-size: 1.5rem;
+    margin-left: 15%;
+    font-weight: bold;
+  }
+  main > .intro:before {
+    content: "RECRUIT";
+    position: absolute;
+    right: 0;
+    bottom: -5%;
+    font-size: 14.5833vw;
+    font-weight: 700;
+    color: #f8f8f8;
+    line-height: 14.5833vw;
+    letter-spacing: -1vw;
+    z-index: 0;
+  }
+  main > .content-1 {
+    padding: 8% 5%;
+    margin: 0% 0;
+    padding: 0% 0;
+    width: 100%;
+    height: 1100px;
+    margin-bottom: 10%;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    flex-direction: column;
+  }
+  main > .content-1 > .content-1-title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20%;
+  }
+  main > .content-1 > .content-1-title > strong {
+    position: relative;
+    width: 40%;
+    font-size: 2rem;
+  }
+  main > .content-1 > .content-1-title > strong::after {
+    content: "";
+    position: absolute;
+    bottom: -17px;
+    left: 0%;
+    width: 30px;
+    height: 4px;
+    background-color: black;
+  }
+  main > .content-1 > .content-1-inner {
+    width: 100%;
+  }
+  main > .content-1 > .content-1-inner > p {
+    width: 100%;
+    font-size: 1.6rem;
+    margin-bottom: 30%;
+  }
+  main > .content-1 > .content-1-inner > .content-1-inner-grid {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+    flex-wrap: unset;
+  }
+  main > .content-1 > .content-1-inner > .content-1-inner-grid > li {
+    position: relative;
+    width: 100%;
+    height: 20%;
+    margin: 10% 0;
+  }
+  main > .content-1 > .content-1-inner > .content-1-inner-grid > li > span {
+    font-weight: 700;
+    font-size: 1.4rem;
+    position: absolute;
+    top: -50%;
+  }
+  main > .content-1 > .content-1-inner > .content-1-inner-grid > li > span > strong {
+    font-size: 5rem;
+  }
+  main > .content-1 > .content-1-inner > .content-1-inner-grid > li > p {
+    padding: 10%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 15px 15px 15px 10px rgb(230, 230, 230);
+    width: 100%;
+    height: 100%;
+  }
+  main > .content-2 {
+    padding: 10% 0;
+    margin: 20% 0;
+    width: 100%;
+    height: 900px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+  }
+  main > .content-2 > .content-2-title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20%;
+  }
+  main > .content-2 > .content-2-title > strong {
+    position: relative;
+    width: 40%;
+    font-size: 2rem;
+  }
+  main > .content-2 > .content-2-title > strong::after {
+    content: "";
+    position: absolute;
+    bottom: -17px;
+    left: 0%;
+    width: 30px;
+    height: 4px;
+    background-color: black;
+  }
+  main > .content-2 > .content-2-inner {
+    width: 100%;
+    padding: 0 5%;
+  }
+  main > .content-2 > .content-2-inner > p:nth-of-type(1) {
+    width: 100%;
+    font-size: 1.6rem;
+    margin-bottom: 5%;
+  }
+  main > .content-2 > .content-2-inner > p:nth-of-type(2) {
+    font-size: 0.8rem;
+  }
+  main > .content-2 > .content-2-inner > .content-2-inner-grid {
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  main > .content-2 > .content-2-inner > .content-2-inner-grid > li {
+    width: 35%;
+  }
+  main > .content-2 > .content-2-inner > .content-2-inner-grid > li div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  main > .content-2 > .content-2-inner > .content-2-inner-grid > li div span {
+    color: white;
+    text-align: center;
+    width: 100%;
+    color: grey;
+    font-weight: bold;
+  }
+  main > .content-2 > .content-2-inner > .content-2-inner-grid > li div p {
+    color: white;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.4rem;
+  }
+  main > .content-2 > .content-2-inner > .content-2-inner-grid > span:nth-of-type(0), main > .content-2 > .content-2-inner > .content-2-inner-grid > span:nth-of-type(2) {
+    display: none;
+  }
+  main > .content-3 {
+    padding: 10% 0;
+    margin: 0% 0;
+    width: 100%;
+    height: 1100px;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    flex-direction: column;
+  }
+  main > .content-3 > .content-3-title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 35%;
+  }
+  main > .content-3 > .content-3-title > strong {
+    position: relative;
+    width: 40%;
+    font-size: 2rem;
+  }
+  main > .content-3 > .content-3-title > strong::after {
+    content: "";
+    position: absolute;
+    bottom: -17px;
+    left: 0%;
+    width: 30px;
+    height: 4px;
+    background-color: black;
+  }
+  main > .content-3 > .content-3-inner {
+    width: 100%;
+  }
+  main > .content-3 > .content-3-inner > .content-3-inner-grid {
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+  main > .content-3 > .content-3-inner > .content-3-inner-grid > li {
+    width: 300px;
+    height: 500px;
+  }
+  main > .content-3 > .content-3-inner > .content-3-inner-grid > li:nth-of-type(1) {
+    background-image: url(../img/pic_philosophy01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  main > .content-3 > .content-3-inner > .content-3-inner-grid > li:nth-of-type(2) {
+    background-image: url(../img/pic_philosophy02.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  main > .content-3 > .content-3-inner > .content-3-inner-grid > li:nth-of-type(3) {
+    background-image: url(../img/pic_philosophy03.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  main > .content-3 > .content-3-inner > .content-3-inner-grid > li div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    width: 100%;
+    height: 100%;
+    padding: 15%;
+    flex-direction: column;
+    margin: 5% auto;
+    color: white;
+    white-space: pre-line;
+  }
+  main > .content-3 > .content-3-inner > .content-3-inner-grid > li div span {
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+  main > .intro {
+    height: 600px 0;
+    padding: 100px 0;
+    position: relative;
+    white-space: pre-line;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    flex-direction: column;
+  }
+  main > .intro h1 {
+    font-size: 4rem;
+    margin-left: 15%;
+  }
+  main > .intro p {
+    font-size: 1.5rem;
+    margin-left: 15%;
+    font-weight: bold;
+  }
+  main > .intro:before {
+    content: "RECRUIT";
+    position: absolute;
+    right: 0;
+    bottom: -5%;
+    font-size: 14.5833vw;
+    font-weight: 700;
+    color: #f8f8f8;
+    line-height: 14.5833vw;
+    letter-spacing: -1vw;
+    z-index: 0;
+  }
+  main > .content-1 {
+    padding: 8% 5%;
+    margin: 0% 0;
+    width: 100%;
+    height: 1000px;
+    margin-bottom: 10%;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    flex-direction: column;
+  }
+  main > .content-1 > .content-1-title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20%;
+  }
+  main > .content-1 > .content-1-title > strong {
+    position: relative;
+    width: 40%;
+    font-size: 2rem;
+  }
+  main > .content-1 > .content-1-title > strong::after {
+    content: "";
+    position: absolute;
+    bottom: -17px;
+    left: 0%;
+    width: 30px;
+    height: 4px;
+    background-color: black;
+  }
+  main > .content-1 > .content-1-inner {
+    width: 100%;
+  }
+  main > .content-1 > .content-1-inner > p {
+    width: 100%;
+    font-size: 1.6rem;
+    margin-bottom: 30%;
+  }
+  main > .content-1 > .content-1-inner > .content-1-inner-grid {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+    flex-wrap: unset;
+  }
+  main > .content-1 > .content-1-inner > .content-1-inner-grid > li {
+    position: relative;
+    width: 100%;
+    height: 20%;
+    margin: 10% 0;
+  }
+  main > .content-1 > .content-1-inner > .content-1-inner-grid > li > span {
+    font-weight: 700;
+    font-size: 1.4rem;
+    position: absolute;
+    top: -50%;
+  }
+  main > .content-1 > .content-1-inner > .content-1-inner-grid > li > span > strong {
+    font-size: 5rem;
+  }
+  main > .content-1 > .content-1-inner > .content-1-inner-grid > li > p {
+    padding: 10%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 15px 15px 15px 10px rgb(230, 230, 230);
+    width: 100%;
+    height: 100%;
+  }
+  main > .content-2 {
+    padding: 10% 0;
+    margin: 0% 0;
+    width: 100%;
+    height: 900px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    flex-direction: column;
+  }
+  main > .content-2 > .content-2-title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20%;
+  }
+  main > .content-2 > .content-2-title > strong {
+    position: relative;
+    width: 40%;
+    font-size: 2rem;
+  }
+  main > .content-2 > .content-2-title > strong::after {
+    content: "";
+    position: absolute;
+    bottom: -17px;
+    left: 0%;
+    width: 30px;
+    height: 4px;
+    background-color: black;
+  }
+  main > .content-2 > .content-2-inner {
+    width: 100%;
+    padding: 0 5%;
+  }
+  main > .content-2 > .content-2-inner > p:nth-of-type(1) {
+    width: 100%;
+    font-size: 1.6rem;
+    margin-bottom: 5%;
+  }
+  main > .content-2 > .content-2-inner > p:nth-of-type(2) {
+    font-size: 0.8rem;
+  }
+  main > .content-2 > .content-2-inner > .content-2-inner-grid {
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  main > .content-2 > .content-2-inner > .content-2-inner-grid > li {
+    width: 35%;
+  }
+  main > .content-2 > .content-2-inner > .content-2-inner-grid > li div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  main > .content-2 > .content-2-inner > .content-2-inner-grid > li div span {
+    color: white;
+    text-align: center;
+    width: 100%;
+    color: grey;
+    font-weight: bold;
+  }
+  main > .content-2 > .content-2-inner > .content-2-inner-grid > li div p {
+    color: white;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.4rem;
+  }
+  main > .content-2 > .content-2-inner > .content-2-inner-grid > span:nth-of-type(0), main > .content-2 > .content-2-inner > .content-2-inner-grid > span:nth-of-type(2) {
+    display: none;
+  }
+  main > .content-3 {
+    padding: 10% 0;
+    margin: 0% 0;
+    width: 100%;
+    height: 700px;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: column;
+  }
+  main > .content-3 > .content-3-title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25%;
+  }
+  main > .content-3 > .content-3-title > strong {
+    position: relative;
+    width: 40%;
+    font-size: 2rem;
+  }
+  main > .content-3 > .content-3-title > strong::after {
+    content: "";
+    position: absolute;
+    bottom: -17px;
+    left: 0%;
+    width: 30px;
+    height: 4px;
+    background-color: black;
+  }
+  main > .content-3 > .content-3-inner {
+    width: 100%;
+  }
+  main > .content-3 > .content-3-inner > .content-3-inner-grid {
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+  main > .content-3 > .content-3-inner > .content-3-inner-grid > li {
+    width: 300px;
+    height: 500px;
+  }
+  main > .content-3 > .content-3-inner > .content-3-inner-grid > li:nth-of-type(1) {
+    background-image: url(../img/pic_philosophy01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  main > .content-3 > .content-3-inner > .content-3-inner-grid > li:nth-of-type(2) {
+    background-image: url(../img/pic_philosophy02.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  main > .content-3 > .content-3-inner > .content-3-inner-grid > li:nth-of-type(3) {
+    background-image: url(../img/pic_philosophy03.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  main > .content-3 > .content-3-inner > .content-3-inner-grid > li div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    width: 100%;
+    height: 100%;
+    padding: 15%;
+    flex-direction: column;
+    margin: 5% auto;
+    color: white;
+    white-space: pre-line;
+  }
+  main > .content-3 > .content-3-inner > .content-3-inner-grid > li div span {
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.6rem;
+  }
+}

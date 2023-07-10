@@ -61,3 +61,32 @@ setInterval(function() {
         num = 0;
     };
 }, 5000);
+
+
+
+// const allTag = document.querySelector(".titleImage");
+
+// let allTagsY = allTag.getBoundingClientRect().y
+// let windowY = window.pageYOffset;
+
+// function init() {
+//     console.log(allTag.getBoundingClientRect().y)
+
+
+//     function scrollFun() {
+//         allTagsY = allTag.getBoundingClientRect().y
+//         console.log(window.pageYOffset);
+//         if(window.pageYOffset >= 40){
+//             allTag.classList.add("active");
+//         }
+//     }
+
+
+
+//     window.addEventListener("scroll", scrollFun);
+// }
+
+// window.addEventListener("load", init);
+
+
+

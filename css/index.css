@@ -46,9 +46,14 @@ main {
   position: relative;
 }
 main .titleImage .bgImage {
+  transition: 0.5s;
   padding-top: 15%;
   overflow: hidden;
   position: relative;
+}
+main .titleImage .bgImage.active {
+  opacity: 1;
+  transform: translateX(0%);
 }
 main .titleImage .bgImage .title-text {
   position: absolute;
@@ -454,7 +459,7 @@ header > .bar > .menus li {
 header > .bar > .menus li:after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: 0%;
   left: 0;
   background-color: black;
   width: 0px;
@@ -510,6 +515,8 @@ header.open > .bar > .menus > li {
 }
 header.open > .bar > .menus > li:after {
   content: "";
+  position: absolute;
+  bottom: 0%;
   background-color: black;
   width: 0px;
   height: 4px;
@@ -1899,4 +1906,4 @@ footer .line-3 ul li:nth-of-type(3) > span {
   footer .line-3 ul li:nth-of-type(3) > span {
     margin-left: 3%;
   }
-}/*# sourceMappingURL=index.css.map */
+}

@@ -19,7 +19,7 @@ header{
                     &:after{
                         content: "";
                         position: absolute;
-                        bottom: 0;
+                        bottom: 0%;
                         left: 0;
                         background-color: black;
                         width: 0px;
@@ -83,6 +83,8 @@ header{
                     font-size: 4rem;
                         &:after{
                             content: "";
+                            position: absolute;
+                            bottom: 0%;
                             background-color: black;
                             width: 0px;
                             height: 4px;
