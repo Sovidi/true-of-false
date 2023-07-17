@@ -61,6 +61,9 @@ setInterval(function() {
 }, 5000);
 
 
+
+
+
 const firstTag = document.querySelector(".bgImage");
 const secondTag = document.querySelector(".second-content");
 const thirdTag = document.querySelector(".third-content");
@@ -83,6 +86,8 @@ ob.observe(firstTag);
 ob.observe(secondTag);
 ob.observe(thirdTag);
 ob.observe(tag4);
+
+
 
 
 
