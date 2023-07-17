@@ -12,3 +12,4 @@ function addBodyCl(){
     docMain.classList.toggle("ds-not");
     menus.classList.toggle("color");
 };
+

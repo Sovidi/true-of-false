@@ -3,14 +3,12 @@ const titleBttn = document.querySelectorAll(".slide-1 > label");
 const slideBttn2 = document.querySelectorAll(".slide-2 > label");
 
 let num2 = 0;
-
 titleBttn.forEach(function(titleBttnV, titleBttnK) {
     titleBttnV.onclick = function() {
         num2 = titleBttnK;
         titleBg.style = `transform:translateX(${-100 * num2}%)`
     };
 });
-
 
 slideBttn2.forEach(function(slideBttn2V, slideBttn2K) {
     slideBttn2V.onclick = function() {
@@ -63,8 +61,30 @@ setInterval(function() {
 }, 5000);
 
 
+const firstTag = document.querySelector(".bgImage");
+const secondTag = document.querySelector(".second-content");
+const thirdTag = document.querySelector(".third-content");
+const tag4 = document.querySelector(".content-4");
 
-// const allTag = document.querySelector(".titleImage");
+
+const ob = new IntersectionObserver(function(entries, observer) {
+    console.log(entries);
+
+    entries.forEach(function(entriesV, entriesK) {
+    
+        if(entriesV.isIntersecting) {
+            entriesV.target.classList.add("active");
+            observer.unobserve(entriesV.target)
+        }
+    });
+});
+
+ob.observe(firstTag);
+ob.observe(secondTag);
+ob.observe(thirdTag);
+ob.observe(tag4);
+
+
 
 // let allTagsY = allTag.getBoundingClientRect().y
 // let windowY = window.pageYOffset;

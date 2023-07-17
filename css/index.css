@@ -46,7 +46,9 @@ main {
   position: relative;
 }
 main .titleImage .bgImage {
-  transition: 0.5s;
+  transition: 0.7s;
+  opacity: 0;
+  transform: scale(0.5);
   padding-top: 15%;
   overflow: hidden;
   position: relative;
@@ -54,6 +56,7 @@ main .titleImage .bgImage {
 main .titleImage .bgImage.active {
   opacity: 1;
   transform: translateX(0%);
+  transform: scale(1);
 }
 main .titleImage .bgImage .title-text {
   position: absolute;
@@ -154,12 +157,20 @@ main .titleImage .bgImage .title-figure div:nth-of-type(3) {
   background-position: center;
 }
 main .titleImage .second-content {
+  transition: 0.7s;
+  opacity: 0;
+  transform: scale(0.5);
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
   height: 700px;
   padding: 0 5%;
+}
+main .titleImage .second-content.active {
+  opacity: 1;
+  transform: translateX(0%);
+  transform: scale(1);
 }
 main .titleImage .second-content .second-content-text {
   width: 55%;
@@ -238,11 +249,19 @@ main .titleImage .text-bar p:nth-of-type(2) {
   }
 }
 main .titleImage .third-content {
+  transition: 0.7s;
+  opacity: 0;
+  transform: scale(0.5);
   margin: 10% auto;
   width: 80%;
   display: flex;
   align-items: center;
   white-space: pre-line;
+}
+main .titleImage .third-content.active {
+  opacity: 1;
+  transform: translateX(0%);
+  transform: scale(1);
 }
 main .titleImage .third-content > div {
   margin: 0px auto;
@@ -260,8 +279,16 @@ main .titleImage .third-content .third-content-text-2 p {
   letter-spacing: 0cap;
 }
 main .titleImage .content-4 {
+  transition: 0.7s;
+  opacity: 0;
+  transform: scale(0.5);
   width: 100%;
   height: 900px;
+}
+main .titleImage .content-4.active {
+  opacity: 1;
+  transform: translateX(0%);
+  transform: scale(1);
 }
 main .titleImage .content-4 > .content-4-slide {
   position: relative;

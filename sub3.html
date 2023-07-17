@@ -1,47 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/sub3.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script defer src="./js/header.js"></script>
     <script defer src="./js/common.js"></script>
-</head>
-<body>
+    <script defer src="./js/sub3.js"></script>
 
-    <header class="header">
-        <div class="bar">
-            <h1>
-                <a href="#"><img src="./img/ic_LOGO.svg" alt=""></a>
-            </h1>
-            <div></div>
-        
-            <ul class="menus">
-                <li><a href="https://sovidi.github.io/wonderplace_clone/sub1.html">COMPANY</a></li>
-                <li><a href="https://sovidi.github.io/wonderplace_clone/sub2.html">RECRUIT</a></li>
-                <li><a href="https://sovidi.github.io/wonderplace_clone/sub3.html">BRAND</a></li>
-                <li><a href="https://sovidi.github.io/wonderplace_clone/sub4.html">SHOP</a></li>
-                <li><a href="">CONTACT</a></li>
-            </ul>
-        
-        
-            <div class="burger">
-                <a href="#"></a>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </header>
+
+</head>
+
+<body>
+    <header class="header"></header>
 
     <style>
-        header > .bar > .menus > li:nth-of-type(3){
+        header>.bar>.menus>li:nth-of-type(3) {
             position: relative;
         }
 
-        header > .bar > .menus > li:nth-of-type(3):after{
+        header>.bar>.menus>li:nth-of-type(3):after {
             content: "";
             position: absolute;
             bottom: 0%;
@@ -59,108 +42,127 @@
         <div class="intro">
             <h1>원더플레이스
                 브랜드</h1>
-                <p>우리는, 원더플레이스만의 새로운 시각으로 패션 브랜드 전개 및 새로운 콘텐츠와 지속 가능한 브랜드 가치를 제공합니다.
-                    우리는, 패션을 통해 고객이 원하는 상품을, 고객이 원하는 시간과 장소에서 고객이 만족하는 합리적인 가격으로,
-                    고객의 더 높은 만족을 위하여 즐겁고 합리적인 소비생활에 기여합니다.</p>
+            <p>우리는, 원더플레이스만의 새로운 시각으로 패션 브랜드 전개 및 새로운 콘텐츠와 지속 가능한 브랜드 가치를 제공합니다.
+                우리는, 패션을 통해 고객이 원하는 상품을, 고객이 원하는 시간과 장소에서 고객이 만족하는 합리적인 가격으로,
+                고객의 더 높은 만족을 위하여 즐겁고 합리적인 소비생활에 기여합니다.</p>
         </div>
 
         <div class="content-4">
-            <div class="content-4-slide">
-                    <div class="content-4-buttons">
-                        <a>GOLA</a>
-                        <a>COMONINOZ</a>
-                        <a>W.STANDARD</a> 
-                        <a>DELICCENT</a>
-                        <a>OUTDOOR PRODUCTS</a>
-                        <a>OCEAN PACIFIC</a>
-                        <a>ORNIDARY HOLIDAY</a>
-                        <a>FIELD WORKER</a>
-                    </div>
-                <figure class="content-4-slide-content">
-                    <div>
+            <div class="content-4-slide swiper mySwiper">
+                <div class="content-4-buttons">
+                    <a>GOLA</a>
+                    <a>COMONINOZ</a>
+                    <a>W.STANDARD</a>
+                    <a>DELICCENT</a>
+                    <a>OUTDOOR PRODUCTS</a>
+                    <a>OCEAN PACIFIC</a>
+                    <a>ORNIDARY HOLIDAY</a>
+                    <a>FIELD WORKER</a>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+                <figure class="content-4-slide-content swiper-wrapper">
+                    <div class="swiper-slide" style="background-image: url(./img/img_contentbg1.jpg)">
                         <div class="content-4-text">
                             <p>HERITAGE AND LIFE STYLE CASUAL WEAR</p>
                             <h2>골라</h2>
                             <p>골라는 1905년 영국 레스터 지방에서 탄생한 골라 클래식은
-                                영국 헤리티지와 라이프스타일을 담은 브랜드입니다.                                
-                                </p>
-                            <a href="#"><p>MORE</p></a>
+                                영국 헤리티지와 라이프스타일을 담은 브랜드입니다.
+                            </p>
+                            <a href="#">
+                                <p>MORE</p>
+                            </a>
                         </div>
                     </div>
-                    <div>
+                    <div class="swiper-slide" style="background-image: url(./img/img_contentbg2.jpg)">
                         <div class="content-4-text">
                             <p>UNISEX DAILY CASUALWEAR</p>
                             <h2>꼬모니노즈</h2>
                             <p>꼬모니노즈는 ‘EASY & COZY ’라는 슬로건과 함께
                                 더 많은 것을 느끼고 조금 덜 생각할 수 있는 미니멀 라이프를 생각하며
                                 단순함 속에서도 작은 즐거움을 찾을 수 있는 옷을 만드는 브랜드입니다.
-                                </p>
-                            <a href="#"><p>MORE</p></a>
+                            </p>
+                            <a href="#">
+                                <p>MORE</p>
+                            </a>
                         </div>
                     </div>
-                    <div>
+                    <div class="swiper-slide" style="background-image: url(./img/img_contentbg3.jpg)">
                         <div class="content-4-text">
                             <p>SIMPLE IS BEST THINGS</p>
                             <h2>더블유스탠다드</h2>
                             <p>일상에서 입는 즐거움을 찾을 수 있도록, 새롭게 변화하는 트렌드 아이템을
                                 다양한 이들이 쉽게 접근할 수 있게 풀어내는 캐주얼웨어 브랜드입니다.
-                                </p>
-                            <a href="#"><p>MORE</p></a>
+                            </p>
+                            <a href="#">
+                                <p>MORE</p>
+                            </a>
                         </div>
                     </div>
-                    <div>
+                    <div class="swiper-slide" style="background-image: url(./img/img_contentbg4.jpg)">
                         <div class="content-4-text">
                             <p>OUR ANGELA WISHES YOUR HAPPINESS</p>
                             <h2>델리센트</h2>
                             <p>Meet an angel!
                                 델리센트는 사랑스러운 당신을 위한 모든 것을 만드는
                                 행운을 전달하는 전도사 “ANGELA”가 꿈꾸는 러블리 감성 브랜드입니다.
-                                </p>
-                            <a href="#"><p>MORE</p></a>
+                            </p>
+                            <a href="#">
+                                <p>MORE</p>
+                            </a>
                         </div>
                     </div>
-                    <div>
+                    <div class="swiper-slide" style="background-image: url(./img/img_contentbg5.jpg)">
                         <div class="content-4-text">
                             <p>OUTDOOR PRODUCTS</p>
                             <h2>아웃도어 프로덕츠</h2>
                             <p>Altshule brothers가 1973년에 설립하였으며, 장소와 계절에 관계없이 편안함과
                                 새로운 변화를 추구하는 21세기 라이프스타일 브랜드입니다.
                                 OUTDOOR PRODUCTS는 일상생활에 필요한 베이직한 요소를 기반으로
-                                실용적이고 기능적인 디테일을 접목한 클래식한 아이템을 제공하는 브랜드입니다.                                
-                                </p>
-                            <a href="#"><p>MORE</p></a>
+                                실용적이고 기능적인 디테일을 접목한 클래식한 아이템을 제공하는 브랜드입니다.
+                            </p>
+                            <a href="#">
+                                <p>MORE</p>
+                            </a>
                         </div>
                     </div>
-                    <div>
+                    <div class="swiper-slide" style="background-image: url(./img/img_contentbg6.jpg)">
                         <div class="content-4-text">
                             <p>CITY LIFE FROM THE OCEAN</p>
                             <h2>오션퍼시픽</h2>
                             <p>오션 퍼시픽은 1972년 서퍼들의 요구를 만족시키는 어패럴 브랜드를
                                 시작으로 현재는 서프 컬처를 비롯한 시티&비치 라이프스타일을
                                 스트릿으로 옮긴 다양한 스타일을 선보이고 있는 브랜드입니다.
-                                </p>
-                            <a href="#"><p>MORE</p></a>
+                            </p>
+                            <a href="#">
+                                <p>MORE</p>
+                            </a>
                         </div>
                     </div>
-                    <div>
+                    <div class="swiper-slide" style="background-image: url(./img/img_contentbg7.jpg)">
                         <div class="content-4-text">
                             <p>BE HAPPY ORDINARY DAY</p>
                             <h2>오션퍼시픽</h2>
                             <p>“YOUNG VIBE”를 컨셉으로 다양한 가치관과
                                 문화 속에서 살고 있는 그들의 문화를 상품으로 재해석한 브랜드입니다.
-                                </p>
-                            <a href="#"><p>MORE</p></a>
+                            </p>
+                            <a href="#">
+                                <p>MORE</p>
+                            </a>
                         </div>
                     </div>
-                    <div>
+                    <div class="swiper-slide" style="background-image: url(./img/img_contentbg8.jpg)">
                         <div class="content-4-text">
                             <p>COMFORT, EASY TO WEAR</p>
                             <h2>필드워커</h2>
                             <p>필드워커는 '일상의 영역에서 데님의 가치를 찾는 작업'
                                 모티브로 '오늘의 아웃핏을 완성시키는 데님의 역할'을 위해 COMFORT,
-                                EASY TO WEAR 그리고 QUALITY의 가치를 추구하는 데님 웨어 브랜드입니다.                          
-                                </p>
-                            <a href="#"><p>MORE</p></a>
+                                EASY TO WEAR 그리고 QUALITY의 가치를 추구하는 데님 웨어 브랜드입니다.
+                            </p>
+                            <a href="#">
+                                <p>MORE</p>
+                            </a>
                         </div>
                     </div>
                 </figure>
@@ -174,40 +176,8 @@
         <li></li>
     </ul>
 
-    <footer class="footer">
-        <div class="line-1">
-            <p><a href="#">Facebook</a></p>
-            <p><a href="#">Instagram</a></p>
-            <p><a href="#">Youtube</a></p>
-        </div>
-        <div class="line-2">
-            <p>COPYRIGHT</p>
-            <p>© WONDERPLACE</p>
-            <p>ALL RIGHTS RESERVED.</p>
-        </div>
-        <div class="line-3">
-            <ul>
-                <li>
-                    <strong>TEL</strong>
-                    <span><a href="#">1668-3508</a></span>
-                </li>
-                <li>
-                    <strong>E-MAIL</strong>
-                    <span><a href="#">help@wonderplace.co.kr</a></span>
-                </li>
-                <li>
-                    <strong>ADDRESS</strong>
-                    <span>04782 서울특별시 성동구 성수일로6길 33 (성수동2가)
-                        아연디지털타워 5층</span>
-                </li>
-            </ul>
-        </div>
-        <div class="line-4">
-            <p>개인정보처리방침</p>
-            <p>대표이사 : 김영한</p>
-            <p>사업자 등록번호 : 201-86-20597</p>
-        </div>
-    </footer>
-
+    <footer class="footer"></footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 </body>
+
 </html>
