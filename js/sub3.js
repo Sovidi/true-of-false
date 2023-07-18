@@ -16,19 +16,25 @@
 //     };
 // }, 5000);
 
-  var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    loop: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+let buttonsName = ["GOLA", "COMONINOZ", "W.STANDARD", "DELICCENT", "OUTDOOR PRODUCTS", "OCEAN PACIFIC", "ORNIDARY HOLIDAY", "FIELD WORKER"];
+const swBullets = document.querySelectorAll(".swiper-pagination-bullet");
+swBullets.forEach(function(swBulletsV, swBulletsK) {
+  swBulletsV.innerText = buttonsName[swBulletsK];
+});
 
 
 // const allTag = document.querySelector(".titleImage");

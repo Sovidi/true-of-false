@@ -61,9 +61,6 @@ setInterval(function() {
 }, 5000);
 
 
-
-
-
 const firstTag = document.querySelector(".bgImage");
 const secondTag = document.querySelector(".second-content");
 const thirdTag = document.querySelector(".third-content");
@@ -88,8 +85,26 @@ ob.observe(thirdTag);
 ob.observe(tag4);
 
 
-
-
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+  
+  let buttonsName = ["GOLA", "COMONINOZ", "W.STANDARD", "DELICCENT", "OUTDOOR PRODUCTS", "OCEAN PACIFIC", "ORNIDARY HOLIDAY", "FIELD WORKER"];
+  const swBullets = document.querySelectorAll(".swiper-pagination-bullet");
+  swBullets.forEach(function(swBulletsV, swBulletsK) {
+    swBulletsV.innerText = buttonsName[swBulletsK];
+  });
+  
 
 // let allTagsY = allTag.getBoundingClientRect().y
 // let windowY = window.pageYOffset;
