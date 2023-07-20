@@ -687,6 +687,10 @@
 
 
 @media (max-width: 767px) {
+    html{
+        font-size: 12px;
+    };
+
     main{
         > .intro{
             height: 700px;

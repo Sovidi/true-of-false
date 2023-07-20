@@ -2,11 +2,12 @@
 @import "_reset";
 
 *{
-    font-family: 'Orbit', sans-serif;}
+    font-family: 'Pretendard-Regular';
+};
 
 html{
     font-size: 16px;
-}
+};
 
 main{
     position: relative;
@@ -152,6 +153,7 @@ main{
                     }
                     &:nth-of-type(3){
                         font-size: 1.3rem;
+                        margin-top: 3%;
                     }
                 }
                 > a{
@@ -162,6 +164,7 @@ main{
                     text-align: center;
                     display: flex;
                     align-items: center;
+                    margin-top: 10%;
                     &:hover{
                         p:after{
                             width: 1px;

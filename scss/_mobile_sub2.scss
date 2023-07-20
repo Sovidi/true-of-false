@@ -1,6 +1,10 @@
 @media (min-width: 768px) and (max-width: 1279px) {}
 
 @media (max-width: 767px) {
+    html{
+        font-size: 12px;
+    };
+
     main{
         > .intro{
             height: 600px 0;

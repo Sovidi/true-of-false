@@ -5,6 +5,12 @@
     left: 45%;
     width: 300px;
     height: 200px;
+    text-align: center;
+    
+    > input{
+        margin-top: 3%;
+    }
+
     > figure{
         width: 300px;
         height: 300px;
