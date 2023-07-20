@@ -2,8 +2,8 @@ $("header").load("./header.html", headerOpening);
 $("footer").load("./footer.html");
 $("body").append(`<div class="popup"><div>`);
 $(".popup").load("./popup.html", pop);
-$("body").append(`<ul class="snsicons"></ul>`);
-$(".snsicons").load("./icons.html");
+$("body").append(`<div class="icons"></div>`);
+$(".icons").load(`./icons.html`, direction)
 
 function headerOpening() {
     const header = document.querySelector("header");
@@ -47,4 +47,45 @@ function pop() {
     };
 
     getTime("tenSec");
+};
+
+function direction() {
+    const arrow = document.querySelector(".direction");
+    const header = document.querySelector("header");
+    const footer = document.querySelector("footer");
+    const snsIcn = document.querySelector(".snsicons")
+
+    arrow.addEventListener("click", function() {
+        if(arrow.classList.contains("active")) {
+            footer.scrollIntoView({behavior: "smooth"})
+        } else {
+            header.scrollIntoView({behavior: "smooth"})
+        };
+    });
+
+
+    let arrowOb = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(function(entriesV, entriesK) {
+            if(entriesV.isIntersecting) {
+                arrow.classList.remove("active");
+            } else {
+                arrow.classList.add("active");
+            }
+        });
+    });
+
+
+    arrowOb.observe(footer);
+
+    let snsOb = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(function(entriesV, entriesK) {
+            if(entriesV.isIntersecting) {
+                snsIcn.classList.add("active");
+            } else {
+                snsIcn.classList.remove("active");
+            }
+        })
+    })
+
+    snsOb.observe(footer);
 };
