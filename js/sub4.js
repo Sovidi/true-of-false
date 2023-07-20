@@ -40,7 +40,7 @@ let shopGrid = {
     ],
     경기 : [
         {
-            위치 : "서울점",
+            위치 : "경기점",
             섬네일 : "./img/shop_0.jpg"
         },
         {
@@ -56,10 +56,9 @@ let shopGrid = {
             섬네일 : "./img/shop_3.jpg"
         },
     ],
-
     광주 : [
         {
-            위치 : "서울점",
+            위치 : "광주점",
             섬네일 : "./img/shop_0.jpg"
         },
         {
@@ -75,10 +74,9 @@ let shopGrid = {
             섬네일 : "./img/shop_3.jpg"
         },
     ],
-
     독일 : [
         {
-            위치 : "서울점",
+            위치 : "독일점",
             섬네일 : "./img/shop_0.jpg"
         },
         {
@@ -94,10 +92,9 @@ let shopGrid = {
             섬네일 : "./img/shop_3.jpg"
         },
     ],
-
     프랑스 : [
         {
-            위치 : "서울점",
+            위치 : "프랑스점",
             섬네일 : "./img/shop_0.jpg"
         },
         {
@@ -115,7 +112,7 @@ let shopGrid = {
     ],
     독도 : [
         {
-            위치 : "서울점",
+            위치 : "독도점",
             섬네일 : "./img/shop_0.jpg"
         },
         {
@@ -131,9 +128,9 @@ let shopGrid = {
             섬네일 : "./img/shop_3.jpg"
         },
     ],
-    서울 : [
+    부싼 : [
         {
-            위치 : "서울점",
+            위치 : "부싼점",
             섬네일 : "./img/shop_0.jpg"
         },
         {
@@ -149,27 +146,46 @@ let shopGrid = {
             섬네일 : "./img/shop_3.jpg"
         },
     ],
-}
-
-for(const shopGridKey in shopGrid) {
-    inner.innerHTML += `<button>${shopGridKey}</button>`;
 };
 
-const innerBttns = document.querySelectorAll(".content-1-inner button");
+const selector = document.querySelector(".storeSel");
+let options = "";
+for(const shopGridKey in shopGrid) {
+    options = document.createElement("option");
+    options.innerText = `${shopGridKey}`;
+    selector.appendChild(options);
+};
+optArr = document.querySelectorAll(".storeSel > option");
 
-innerBttns.forEach(function(innerBttnsV, k) {
-    innerBttnsV.onclick = function() {
-        grid.innerHTML = "";
-        let bttnsText = innerBttns[k].innerText;
-        shopGrid[bttnsText].forEach(function(bttnsTextV, k) {
-            grid.innerHTML += `
+selector.addEventListener('change', function() {
+    let cityName = selector.value;
+    console.log(shopGrid[cityName]);
+    grid.innerHTML = "";
+    shopGrid[cityName].forEach(function(V, K) {
+        grid.innerHTML += `
             <li>
                 <div>
-                    <figure style="background-image: url(${bttnsTextV.섬네일});"></figure>
-                    <figcaption>${bttnsTextV.위치}</figcaption>
+                    <figure style="background-image: url(${V.섬네일});"></figure>
+                    <figcaption>${V.위치}</figcaption>
                 </div>
             </li>
             `;
-        })
-    }
+    })
 });
+
+//  optArr.forEach(function(optArrV, optArrK) {
+    // optionsV.onchange = function() {
+    //     grid.innerHTML = "";
+    //     let opsText = options[optionsK].innerText;
+    //     shopGrid[opsText].forEach(function(opsTextV, opsTextK) {
+    //         grid.innerHTML += `
+    //         <li>
+    //             <div>
+    //                 <figure style="background-image: url(${opsTextV.섬네일});"></figure>
+    //                 <figcaption>${opsTextV.위치}</figcaption>
+    //             </div>
+    //         </li>
+    //         `;
+    //     })
+    // }
+// });

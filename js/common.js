@@ -1,9 +1,9 @@
 $("header").load("./header.html", headerOpening);
-$("footer").load("./footer.html");
+$(".footer").load("./footer.html");
 $("body").append(`<div class="popup"><div>`);
 $(".popup").load("./popup.html", pop);
 $("body").append(`<div class="icons"></div>`);
-$(".icons").load(`./icons.html`, direction)
+$(".icons").load(`./icons.html`, direction);
 
 function headerOpening() {
     const header = document.querySelector("header");
@@ -63,7 +63,6 @@ function direction() {
         };
     });
 
-
     let arrowOb = new IntersectionObserver(function(entries, observer) {
         entries.forEach(function(entriesV, entriesK) {
             if(entriesV.isIntersecting) {
@@ -73,8 +72,6 @@ function direction() {
             }
         });
     });
-
-
     arrowOb.observe(footer);
 
     let snsOb = new IntersectionObserver(function(entries, observer) {
@@ -86,6 +83,5 @@ function direction() {
             }
         })
     })
-
     snsOb.observe(footer);
 };
