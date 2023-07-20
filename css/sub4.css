@@ -100,13 +100,13 @@ main > .intro:before {
   z-index: 0;
 }
 main > .content-1 {
-  padding: 8% 0;
+  padding: 5% 0;
   margin: 0% 0;
   width: 100%;
-  height: 1200px;
+  height: 1400px;
   background-color: #f8f8f8;
   display: flex;
-  justify-content: flex-start;
+  justify-content: start;
   align-items: start;
   flex-direction: column;
 }
@@ -115,11 +115,12 @@ main > .content-1 > .content-1-inner {
   text-align: center;
 }
 main > .content-1 > .content-1-inner > select {
-  font-size: 1.3rem;
-  margin: 3%;
-  padding: 1.5%;
-  border: 1px solid grey;
+  font-size: 1rem;
+  margin: 2%;
+  padding: 1%;
+  border: 1px solid rgba(128, 128, 128, 0.658);
   background-color: white;
+  border-radius: 300px;
   border-radius: 3%;
 }
 main > .content-1 > .content-1-grid {
@@ -141,15 +142,22 @@ main > .content-1 > .content-1-grid > li > div {
   padding-bottom: 10%;
 }
 main > .content-1 > .content-1-grid > li > div > figure {
-  height: 300px;
+  height: 200px;
   background-size: cover;
 }
 main > .content-1 > .content-1-grid > li > div > figcaption {
   position: absolute;
-  font-size: 3rem;
+  font-size: 2rem;
   height: 30px;
   margin: 10% 0;
   bottom: 0;
+}
+main > .content-1 > .shop-banner {
+  width: 80%;
+  margin: 5% auto;
+}
+main > .content-1 > .shop-banner > img {
+  width: 100%;
 }
 
 header {
