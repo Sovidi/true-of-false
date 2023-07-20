@@ -151,6 +151,7 @@ let shopGrid = {
 const selector = document.querySelector(".storeSel");
 let options = "";
 for(const shopGridKey in shopGrid) {
+    console.log(shopGrid[shopGridKey]);
     options = document.createElement("option");
     options.innerText = `${shopGridKey}`;
     selector.appendChild(options);
@@ -159,7 +160,6 @@ optArr = document.querySelectorAll(".storeSel > option");
 
 selector.addEventListener('change', function() {
     let cityName = selector.value;
-    console.log(shopGrid[cityName]);
     grid.innerHTML = "";
     shopGrid[cityName].forEach(function(V, K) {
         grid.innerHTML += `
