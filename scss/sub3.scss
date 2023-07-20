@@ -52,21 +52,26 @@ main {
                 color: white;
             }
             >.content-4-buttons {
-                @include flex(end, center);
+                @include flex(center, start);
                 flex-direction: column;
                 font-weight: bold;
-                width: 40%;
+                width: 30%;
                 position: absolute;
-                margin-left: 60%;
+                margin-left: 50%;
                 margin-bottom: 10%;
-                right: 100%;
+                right: 0%;
                 z-index: 100;
                 > .swiper-pagination-bullet{
+                    &.swiper-pagination-bullet-active{
+                        &:after {
+                            border: 3px solid white;
+                            width: 0.1%;
+                        }
+                    }
                     width: 100%;
                     font-size: 1rem;
                     text-align: right;
                     background-color: transparent;
-                    width: 40%;
                     margin: 5% 0%;
                     color: white;
                     transition: 1s;
@@ -95,12 +100,6 @@ main {
                     &:nth-of-type(6) {}
                     &:nth-of-type(7) {}
                     &:nth-of-type(8) {}
-                }
-                > .swiper-pagination-bullet-active{
-                    &:after {
-                        border: 3px solid white;
-                        width: 0.1%;
-                    }
                 }
 
             }
@@ -184,9 +183,9 @@ main {
     }
 }
 
-
 @import "_header";
-@import "_snsicons";
+@import "_icons";
 @import "_footer";
-@import "_mobile";
+@import "_popup";
+@import "_mobile_common";
 @import "_mobile_sub3";

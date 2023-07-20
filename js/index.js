@@ -42,23 +42,23 @@ setInterval(function() {
 
 
 
-const bttns = document.querySelectorAll(".content-4-buttons > a");
-const bgs = document.querySelector(".content-4-slide-content")
+// const bttns = document.querySelectorAll(".content-4-buttons > a");
+// const bgs = document.querySelector(".content-4-slide-content")
 
-bttns.forEach(function(bttnsV, bttnsK) {
-    bttnsV.onclick = function() {
-        bgs.style = `transform:translateX(-${bttnsK * 100}%)`;
-    }
-});
+// bttns.forEach(function(bttnsV, bttnsK) {
+//     bttnsV.onclick = function() {
+//         bgs.style = `transform:translateX(-${bttnsK * 100}%)`;
+//     }
+// });
 
-let num = 0;
-setInterval(function() {
-    bgs.style = `transform:translateX(-${num * 100}%)`;
-    num++
-    if(num >= 8) {
-        num = 0;
-    };
-}, 5000);
+// let num = 0;
+// setInterval(function() {
+//     bgs.style = `transform:translateX(-${num * 100}%)`;
+//     num++
+//     if(num >= 8) {
+//         num = 0;
+//     };
+// }, 5000);
 
 
 const firstTag = document.querySelector(".bgImage");
@@ -68,13 +68,11 @@ const tag4 = document.querySelector(".content-4");
 
 
 const ob = new IntersectionObserver(function(entries, observer) {
-    console.log(entries);
-
     entries.forEach(function(entriesV, entriesK) {
-    
         if(entriesV.isIntersecting) {
             entriesV.target.classList.add("active");
             observer.unobserve(entriesV.target)
+            console.log(entriesV.target);
         }
     });
 });
@@ -84,11 +82,14 @@ ob.observe(secondTag);
 ob.observe(thirdTag);
 ob.observe(tag4);
 
-
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
@@ -96,7 +97,7 @@ var swiper = new Swiper(".mySwiper", {
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
-    },
+    }
   });
   
   let buttonsName = ["GOLA", "COMONINOZ", "W.STANDARD", "DELICCENT", "OUTDOOR PRODUCTS", "OCEAN PACIFIC", "ORNIDARY HOLIDAY", "FIELD WORKER"];
