@@ -388,6 +388,8 @@ header.open > .bar > .menus {
 header.open > .bar > .menus > li {
   margin: 0px 4%;
   font-size: 4rem;
+  -webkit-text-stroke: 0.1px black;
+  color: transparent;
 }
 header.open > .bar > .menus > li:after {
   content: "";
@@ -397,6 +399,9 @@ header.open > .bar > .menus > li:after {
   width: 0px;
   height: 4px;
   transition: 1s;
+}
+header.open > .bar > .menus > li:hover {
+  color: black;
 }
 header.open > .bar > .menus > li:hover:after {
   width: 10%;

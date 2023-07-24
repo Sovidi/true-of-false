@@ -83,6 +83,8 @@ header{
                 > li{
                     margin: 0px 4%;
                     font-size: 4rem;
+                    -webkit-text-stroke: 0.1px black;
+                    color: transparent;    
                         &:after{
                             content: "";
                             position: absolute;
@@ -93,6 +95,7 @@ header{
                             transition: 1s;
                             }
                         &:hover{
+                            color: black;
                             &:after{
                                 width: 10%;
                                 height: 4px;
