@@ -7,6 +7,7 @@ $(".icons").load(`./icons.html`, direction);
 
 function headerOpening() {
     const header = document.querySelector("header");
+    const footer = document.querySelector("footer");
     const docMain = document.querySelector("main");
     const menus = document.querySelector(".menus");
     const fullBttn = document.querySelector(".burger > a");
@@ -15,6 +16,7 @@ function headerOpening() {
     function addBodyCl(){
         header.classList.toggle("open");
         docMain.classList.toggle("ds-not");
+        footer.classList.toggle("ds-not");
     };
 };
 

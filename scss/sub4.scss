@@ -75,6 +75,9 @@ main{
                 position: relative;
                 width: 300px;
                 padding-bottom: 10%;
+                > h2{
+                    display: none;
+                }
                 > figure{
                     height: 200px;
                     background-size: cover;
