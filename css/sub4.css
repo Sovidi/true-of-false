@@ -153,7 +153,7 @@ main > .content-1 > .content-1-grid > li > div > figcaption {
   font-size: 2rem;
   height: 30px;
   margin: 10% 0;
-  bottom: 0;
+  bottom: -20%;
 }
 main > .content-1 > .shop-banner {
   width: 80%;
