@@ -1,27 +1,32 @@
 # wonderplace_clone
 <br><br>
 
-
-## 소개
+### 소개
 
 원더플레이스, 첫 프로젝트 작품입니다.
 
 원더플레이스의 브랜드 소개 페이지를 클론코딩하였습니다.
-<br><br>
-## 개발환경
 
-Windows 10
+### 개발환경
 
-Visual Studio Code
-<br><br>
-## 사용언어
+> Windows 10
+> 
 
-HTML
+> Visual Studio Code
+> 
 
-SCSS
-<br><br>
-Javascript
+### 사용언어
 
-## 플러그인
+> HTML
+> 
 
-Swiper
+> SCSS
+> 
+
+> Javascript
+> 
+
+### 플러그인
+
+> Swiper
+>
