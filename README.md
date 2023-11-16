@@ -1,5 +1,7 @@
 # wonderplace_clone
 
+# 캠페인 기획서
+
 <aside>
 💡 **Notion 팁:** 이 템플릿을 활용해 캠페인 목표, 핵심 메시지, 타임라인 등의 정보를 담은 기획서를 작성하세요. 오른쪽 상단의 `공유` 버튼을 클릭해 이 페이지를 다른 팀원들과 공유할 수도 있습니다. 공유와 사용 권한에 대해 더 알아보려면 [여기](https://www.notion.so/ko-kr/help/sharing-and-permissions)를 클릭하세요.
 
@@ -39,7 +41,7 @@ aaaaaaaaaa
 
 주요 채널별 마케팅 전략을 수립하세요. 캠페인 시작 전, 진행 중, 시작 후 각 채널의 역할에 대해 정의하고, 채널별로 타깃 고객들을 어떻게 참여시킬지도 고민해 보세요.
 
-[Strategy](https://www.notion.so/2972b2a401f641d5b8beed925e53be8b?pvs=21)
+[Strategy](%E1%84%8F%E1%85%A2%E1%86%B7%E1%84%91%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%80%E1%85%B5%E1%84%92%E1%85%AC%E1%86%A8%E1%84%89%E1%85%A5%20382aeccb9ca64876a917ffaf9df9edd7/Strategy%202972b2a401f641d5b8beed925e53be8b.csv)
 
 # 주요 일정
 
@@ -52,4 +54,4 @@ aaaaaaaaaa
 
 ---
 
-[Meeting notes](https://www.notion.so/4cd51149fe304a54a123d2b4ad3e4ba2?pvs=21)
+[Meeting notes](%E1%84%8F%E1%85%A2%E1%86%B7%E1%84%91%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%80%E1%85%B5%E1%84%92%E1%85%AC%E1%86%A8%E1%84%89%E1%85%A5%20382aeccb9ca64876a917ffaf9df9edd7/Meeting%20notes%204cd51149fe304a54a123d2b4ad3e4ba2.csv)
